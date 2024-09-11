@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************\
+-----------------LOADER-----------------
+\**************************************/
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 10vw 6vw;
+  text-transform: uppercase;
+  background-color: #0B0B0B;
+  z-index: 10;
+}
+
+.loader .text {
+  gap: 3vw;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.loader .text .count-down {
+  gap: 2vw;
+  display: flex;
+  align-items: center;
+}
+
+.loader .text .count-down .counter {
+  width: 5vw;
+  text-align: right;
+}
+
+.loader .text .count-down h5 {
+  font-size: 3vw;
+  font-family: "SLI";
+}
+
+.loader .text h1 {
+  font-size: 7vw;
+  font-family: "PL";
+}
+
+.loader .text .text-animation {
+  line-height: 0;
+  animation-name: textAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/**************************************\
+------------------HOME------------------
+\**************************************/
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #151515;
+}

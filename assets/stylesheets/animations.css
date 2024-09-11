@@ -1,0 +1,33 @@
+@keyframes textAnimation {
+  0% {
+    opacity: 1;
+    color: white;
+    font-weight: 500;
+    font-family: "PL";
+    -webkit-text-stroke: 1px white;
+  }
+
+  48% {
+    opacity: 0;
+    color: white;
+    font-weight: 500;
+    font-family: "PL";
+    -webkit-text-stroke: 1px white;
+  }
+
+  50% {
+    opacity: 1;
+    font-weight: 100;
+    color: transparent;
+    font-family: "SLI";
+    -webkit-text-stroke: 1px white;
+  }
+
+  100% {
+    opacity: 0;
+    font-weight: 100;
+    color: transparent;
+    font-family: "SLI";
+    -webkit-text-stroke: 1px white;
+  }
+}

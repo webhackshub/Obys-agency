@@ -1,0 +1,19 @@
+@font-face {
+  font-family: PL;
+  src: url(../fonts/Plain-Light.woff2);
+}
+
+@font-face {
+  font-family: PR;
+  src: url(../fonts/Plain-Regular.woff2);
+}
+
+@font-face {
+  font-family: SLI;
+  src: url(../fonts/Siklserif-Light-Italic.woff2);
+}
+
+@font-face {
+  font-family: SRI;
+  src: url(../fonts/Siklserif-Regular-Italic.woff2);
+}
