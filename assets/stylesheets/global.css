@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   color: white;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -9,6 +11,10 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /**************************************\
@@ -62,12 +68,141 @@ body {
 }
 
 /**************************************\
+-----------------CURSER-----------------
+\**************************************/
+
+.cursor {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  position: fixed;
+  mix-blend-mode: difference;
+  border: 1.5px solid #dadada8d;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/**************************************\
 ------------------HOME------------------
 \**************************************/
 
-.home {
+.homepage {
   width: 100%;
   min-height: 100vh;
   position: relative;
   background-color: #151515;
+}
+
+.navbar {
+  width: 100%;
+  padding: 3.2vw 5.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  gap: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links ul {
+  gap: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links ul li a {
+  font-size: 15px;
+  font-family: "PL";
+}
+
+.home {
+  gap: 5vw;
+  padding: 7.5vw 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.home h2 {
+  font-size: 3vw;
+  font-family: "SLI";
+}
+
+.home-text {
+  overflow: hidden;
+}
+
+.home h1 {
+  height: fit-content;
+  font-size: 7vw;
+  line-height: 7.5vw;
+  display: flex;
+  font-family: "PL";
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.home .text-graphic-container {
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.home .text-graphic {
+  text-decoration: underline;
+}
+
+/**************************************\
+----------------SHOWREEL----------------
+\**************************************/
+
+.show-reel-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #151515;
+}
+
+.show-reel {
+  width: 70%;
+  height: 65%;
+  position: relative;
+}
+
+.reel-controller {
+  top: -15%;
+  right: 15%;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  border-radius: 50%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFA63D;
+  z-index: 100;
+}
+
+.reel-controller i {
+  font-size: 32px;
+}
+
+.show-reel img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.show-reel video {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
 }
